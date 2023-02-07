@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* padding: 1em; */
+}
+
+.header {
+  height: 70em;
+  width: 100%;
+  background-color: aliceblue;
+  background-image: url(/assets/img/forestprogress.png);
+  background-position: center top;
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-20%);
+  animation: 1300ms rico ease-out forwards;
+}
+
+@keyframes rico {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  50% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+.mountain {
+  height: 15em;
+  width: auto;
+  transform: rotate(180deg);
+}
+
+.title,
+.subtitle {
+  font-size: 400%;
+  color: aliceblue;
+  transform: translateY(240%);
+  font-weight: 700;
+  animation: 3s rico-text forwards;
+}
+
+@keyframes rico-text {
+  0% {
+    transform: scale(10%);
+  }
+  50% {
+    transform: scale(150%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.container01 {
+  height: 30em;
+  width: 60%;
+  background-color: #f1f0fe;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  transform: translateY(-110%);
+  animation: 1s cont-rico ease forwards;
+}
+@keyframes cont-rico {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX();
+  }
+}
+
+.container01-text {
+  width: 45%;
+  font-weight: 600;
+  color: #848389;
+  transform: translateX(45%);
+}
+
+.container-title01 {
+  transform: translatex(25%);
+  margin-bottom: 1em;
+  width: 12em;
+  /* overflow-x: hidden; */
+}
+
+.container-title02,
+.container-title03 {
+  transform: translatex(30%);
+  /* overflow-x: hidden; */
+  width: 12em;
+}
+
+.container-title03 {
+  margin-bottom: 1em;
+}
+
+.container-title04 {
+  transform: translatex(25%);
+  margin-bottom: 1em;
+  width: 20em;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: row;
+  /* transform: translateY(-100%); */
+}
+
+.padure {
+  transform: translate(-40%, -70%);
+  /* box-shadow: 1px 1px 1px 1px black; */
+  /* height: 15em; */
+  /* width: auto; */
+  /* border-radius: 4em; */
+  animation: 1s padurica ease-in forwards;
+}
+
+@keyframes padurica {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translate(-40%, -90%);
+  }
+}
+
+.imagine {
+  border-radius: 1em;
+  height: auto;
+  width: 35em;
+  transform: scale(120%);
+  -webkit-box-shadow: 3px 2px 9px 9px rgba(0, 0, 0, 0.53);
+  box-shadow: 3px 2px 9px 9px rgba(0, 0, 0, 0.53);
+}
+
+.mijloc {
+  /* background-color: rgba(0, 255, 255, 0.315); */
+  height: 4.2em;
+  width: 100%;
+  transform: translateY(-720%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mijloc02 {
+  /* background-color: rgba(0, 255, 255, 0.315); */
+  height: 4.2em;
+  width: 100%;
+  transform: translateY(-420%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titlul01 {
+  /* animation: 3s titlu ease-in forwards; */
+}
+
+.titlul02 {
+  /* animation: 2s titlu02 ease-in forwards; */
+  transform: scale(1.5);
+}
+/* @keyframes titlu02 {
+  0% {
+    transform: translateX(+1000%);
+  }
+
+  100% {
+    transform: translateX();
+  }
+}
+
+@keyframes titlu {
+  0% {
+    transform: translateX(-1000%);
+  }
+
+  100% {
+    transform: translateX();
+  }
+} */
+
+.poza01,
+.poza02,
+.poza03,
+.poza04,
+.poza05 {
+  height: 40%;
+  width: 7em;
+  /* border-radius: 1.2em; */
+  background-size: cover;
+}
+
+.poze {
+  height: 20em;
+  width: 100%;
+  /* background-color: aqua; */
+  transform: translateY(-130%);
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "1 2 3"
+    "4 5 6"
+    "7 8 9"; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.poza01 {
+  background-image: url(/assets/img/cloud2.png);
+  /* height: 5em;
+  width: 5em; */
+  grid-area: head3;
+  height: 9.6em;
+  width: 15em;
+  border-radius: 1em;
+}
+.poza02 {
+  background-image: url(/assets/img/cloud3.png);
+  grid-area: foot3;
+  height: 9.6em;
+  width: 15em;
+  border-radius: 1em;
+}
+
+.poza03 {
+  background-image: url(/assets/img/daarkMontain.png);
+  grid-area: head1 / foot1;
+  height: 20em;
+  width: 25em;
+  border-radius: 1em;
+  margin-right: 1em;
+}
+
+.poza04 {
+  background-image: url(/assets/img/cloudoranger.png);
+  grid-area: foot2;
+  height: 9.6em;
+  width: 15em;
+  border-radius: 1em;
+}
+
+.poza05 {
+  background-image: url(/assets/img/Ikea-forest.jpg);
+  grid-area: head2;
+  height: 9.6em;
+  width: 15em;
+  border-radius: 1em;
+}
+.inside {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "head1 head2 head3"
+    "foot1 foot2 foot3";
+}
+
+.poza01:hover,
+.poza02:hover,
+.poza04:hover,
+.poza05:hover {
+  animation: poze 0.5s ease-in-out forwards;
+  cursor: pointer;
+}
+
+@keyframes poze {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+    border: 1px solid aliceblue;
+    overflow: scroll;
+  }
+}
+
+.poza03:hover {
+  animation: poza03 0.5s ease-in-out forwards;
+  cursor: pointer;
+}
+
+@keyframes poza03 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.3);
+    border: 1px solid aliceblue;
+  }
+}
+
+.cards {
+  /* overflow: hidden; */
+  /* position: absolute; */
+  transform: translate(-100%, -70%);
+  height: 40em;
+  width: 50em;
+  display: flex;
+  flex-direction: row-reverse;
+  /* overflow: scroll; */
+}
+
+.text02 {
+  width: 70%;
+  height: 30em;
+  background-color: rgb(221, 218, 218);
+  padding-top: 10%;
+  /* transform: translateX(15%); */
+}
+
+.box-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.container03 {
+  transform: translateY(-60%);
+}
+
+.card-title01 {
+  font-size: 5em;
+}
+
+.text03 {
+  transform: translateX(40%);
+  width: 40em;
+}
+
+.card01 {
+  height: 25em;
+  width: 25em;
+  background-color: rgb(172, 67, 233);
+  /* overflow: hidden; */
+  border-radius: 1em;
+  /* transform: translate(-40%, -87%); */
+  /* margin-right: 5em; */
+  -webkit-box-shadow: 3px 2px 9px 9px rgba(0, 0, 0, 0.53);
+  box-shadow: 3px 2px 9px 9px rgba(0, 0, 0, 0.53);
+  padding: 2em;
+  color: aliceblue;
+  font-weight: 600;
+}
+.card02 {
+  height: 25em;
+  width: 25em;
+  background-color: rgb(233, 147, 67);
+  /* overflow: hidden; */
+  border-radius: 1em;
+  /* transform: translate(-145%, -187%); */
+  margin-right: 5em;
+  -webkit-box-shadow: 3px 2px 9px 9px rgba(0, 0, 0, 0.53);
+  box-shadow: 3px 2px 9px 9px rgba(0, 0, 0, 0.53);
+  padding: 2em;
+  color: aliceblue;
+}
+
+.indian {
+  height: 7em;
+  width: 7em;
+  background-size: cover;
+  border-radius: 3.5em;
+  transform: translateY(70%);
+}
+
+.img-txt1,
+.img-txt2 {
+  transform: translateX(40%);
+}
+
+.carte-container01 {
+  background-image: url(/assets/img/map.jpg);
+  background-size: cover;
+  height: 10em;
+  width: 15em;
+  border-radius: 2em;
+}
+
+.carte-lunga {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 3%;
+  margin-bottom: 2%;
+}
+
+.carte-container02 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #e6e6eb;
+  width: 70%;
+  margin-right: 5%;
+  padding-top: 3%;
+  padding-right: 3%;
+  border-radius: 2em;
+}
+
+.dreapta {
+  width: 50%;
+  height: 30%;
+  /* background-color: #848389; */
+}
+
+.stanga {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  margin-left: 10%;
+  justify-content: center;
+}
+
+.tilu-mare {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.email {
+  background-color: aqua;
+  height: 3em;
+  width: 8em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  border-radius: 1em;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.carte-container01-poza2 {
+  background-image: url(/assets/img/bombay.jpg);
+  background-size: cover;
+  height: 10em;
+  width: 15em;
+  border-radius: 2em;
+}
+
+.carte-container01-poza3 {
+  background-image: url(/assets/img/Val.jpg);
+  background-size: cover;
+  height: 10em;
+  width: 15em;
+  border-radius: 2em;
+}
+
+.footer {
+  margin-top: 5%;
+  /* margin-bottom: 5%; */
+  display: flex;
+  flex-direction: row;
+}
+
+.munte-stanga {
+  height: 35em;
+  width: 50%;
+  background-image: url(/assets/img/daarkMontain.png);
+  margin-left: 1px;
+  border: 1px solid aliceblue;
+  background-size: cover;
+  padding-top: 5%;
+  padding-left: 5%;
+  color: aliceblue;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-around;
+  transform: translateX(30%);
+  margin-top: 3%;
+  font-size: 2em;
+  font-weight: 700;
+  color: aliceblue;
+}
+
+.email-form {
+  height: 30em;
+  width: 40em;
+  background-color: blueviolet;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-30%, 20%);
+  -webkit-box-shadow: 6px 8px 21px 0px #000000;
+  box-shadow: 6px 8px 21px 0px #000000;
+}
+
+.email01 {
+  width: 80%;
+  height: 2em;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  margin-left: 7%;
+  border: 1px solid aliceblue;
+
+  border-radius: 1em;
+}
+
+.email02 {
+  width: 80%;
+  height: 10em;
+  margin-left: 7%;
+  margin-top: 1%;
+  border-radius: 1em;
+  border: 1px solid aliceblue;
+}
+
+.button {
+  width: 20%;
+  height: 3em;
+  border-radius: 1.5em;
+  background-color: greenyellow;
+  color: white;
+  font-weight: 700;
+  border: 1px solid greenyellow;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.wrapper-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
